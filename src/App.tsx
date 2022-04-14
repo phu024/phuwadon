@@ -6,8 +6,6 @@ import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { PaletteMode } from "@mui/material";
 import { amber, grey} from "@mui/material/colors";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Home from "./components/home";
 
