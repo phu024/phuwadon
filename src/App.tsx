@@ -5,7 +5,7 @@ import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { PaletteMode } from "@mui/material";
-import { amber, grey, deepOrange } from "@mui/material/colors";
+import { amber, grey} from "@mui/material/colors";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -13,38 +13,38 @@ import Home from "./components/home";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
-function MyNav() {
-  const theme = useTheme();
-  const colorMode = React.useContext(ColorModeContext);
-  return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar variant="dense">
-          <Typography
-            variant="h4"
-            sx={{ fontFamily: "'Pacifico', cursive;", my: 2 }}
-          >
-            I'am Phu.
-          </Typography>
-          <Box sx={{ ml: "auto" }}>
-            <IconButton
-              sx={{ ml: 1 }}
-              onClick={colorMode.toggleColorMode}
-              color="inherit"
-            >
-              {theme.palette.mode === "dark" ? (
-                <Brightness7Icon />
-              ) : (
-                <Brightness4Icon />
-              )}
-            </IconButton>
-            {/* {theme.palette.mode} mode */}
-          </Box>
-        </Toolbar>
-      </AppBar>
-    </Box>
-  );
-}
+// function MyNav() {
+//   const theme = useTheme();
+//   const colorMode = React.useContext(ColorModeContext);
+//   return (
+//     <Box sx={{ flexGrow: 1 }}>
+//       <AppBar position="static">
+//         <Toolbar variant="dense">
+//           <Typography
+//             variant="h4"
+//             sx={{ fontFamily: "'Pacifico', cursive;", my: 2 }}
+//           >
+//             I'am Phu.
+//           </Typography>
+//           <Box sx={{ ml: "auto" }}>
+//             <IconButton
+//               sx={{ ml: 1 }}
+//               onClick={colorMode.toggleColorMode}
+//               color="inherit"
+//             >
+//               {theme.palette.mode === "dark" ? (
+//                 <Brightness7Icon />
+//               ) : (
+//                 <Brightness4Icon />
+//               )}
+//             </IconButton>
+//             {/* {theme.palette.mode} mode */}
+//           </Box>
+//         </Toolbar>
+//       </AppBar>
+//     </Box>
+//   );
+// }
 
 function Mymenu() {
   const theme = useTheme();

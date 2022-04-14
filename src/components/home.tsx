@@ -2,14 +2,12 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import working_space from "./images/working_space.png";
 
 //----------------
 import MediaControlCard from "./data/myCard";
-import Coming_soon from "./data/coming";
+import ComingSoon from "./data/coming";
 import ContactSocial from "./listcontact";
 
 export default function Home() {
@@ -24,7 +22,7 @@ export default function Home() {
                 <MediaControlCard />
               </Grid>
               <Grid sx={{ mt: 10 }}>
-                <Coming_soon />
+                <ComingSoon />
               </Grid>
             </Grid>
             <Grid xl={6}>
