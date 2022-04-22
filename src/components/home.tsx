@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import working_space from "./images/working_space.png";
 
+import "./home.css"
 //----------------
 import MediaControlCard from "./data/myCard";
 import ComingSoon from "./data/coming";
@@ -26,7 +27,7 @@ export default function Home() {
               </Grid>
             </Grid>
             <Grid xl={6}>
-              <img src={working_space} alt="phu" width="600" />
+              <img src={working_space} alt="phu" className="responsive"/>
             </Grid>
             <Grid xl={12}>
               <ContactSocial />
